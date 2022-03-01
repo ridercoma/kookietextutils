@@ -34,7 +34,7 @@ def analyze(request):
         return render(request, 'analyze.html', params)    
     elif newlineremover=="on":
         analyzed=""
-        for char in djtext:
+        for char in djtext:    
              if char!="\n":
                  analyzed=analyzed+char
         params = {'purpose': 'Removed NewLines', 'analyzed_text': analyzed}
